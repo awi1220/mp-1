@@ -1,0 +1,222 @@
+/*General CSS Codes*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Avenir light", Avenir, Helvetica, "Helvetica Neue", sans-serif;
+}
+
+header {
+    padding: 20px;
+    background-color: #4E7777;
+    color: #F6F2ED;
+    text-shadow: 2px 2px 2px #333333;
+    text-align: left;
+}
+
+body {
+    margin: 5px auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #FED8B1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+nav li {
+    margin: 5px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #033E3E;
+    font-size: calc(14px + 0.5vw);
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    /*button effect*/
+    border-radius: 8px;
+    background-color: #FF6F61;
+    border: 2px solid #033E3E;
+    margin: 10px auto;
+    width: 80%;
+}
+
+/*button hover effect*/
+nav a:hover {
+    background-color: #033E3E;
+    color: #FED8B1;
+}
+
+nav {
+    width: 30%;
+    float: left;
+    background-color: #FED8B1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #FED8B1;
+    color: #033E3E;
+    text-align: center;
+    padding: 10px 0;
+    clear: both;
+}
+
+main {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FED8B1;
+    color: #033E3E;
+    padding: 20px;
+    height: 100vh;
+}
+
+table {
+    table-layout: fixed;
+    margin-bottom: 20px;
+}
+
+h2, h3, h5 {
+    margin-bottom: 10px;
+}
+
+/* Media query for screens smaller than 750px */
+@media screen and (max-width: 750px) {
+    nav {
+        width: 100%;
+        flex-direction: row;
+        height: auto;
+        float: none;
+        font-size: calc(5px + 1.5vw);
+        padding: 10px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        list-style: none;
+        margin: 0;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #033E3E;
+        display: block;
+        padding: 10px 15px;
+        font-size: calc(8px + 1vw);
+        width: auto;
+    }
+
+    header {
+        text-align: center;
+        padding: 20px;
+        background-color: #4E7777;
+        color: #F6F2ED;
+        text-shadow: 2px 2px 2px #333333;
+    }
+
+    main {
+        width: 100%;
+        float: none;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: calc(5px + 1.5vw);
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+        position: relative;
+    }
+}
+
+/* CSS Codes for JavaScript Calculator*/
+.calc-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #FED8B1;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-section input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%;
+    font-size: calc(12px + 0.5vw);
+    border: 1px solid #033E3E;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.buttons-section button {
+    background-color: #FF6F61;
+    color: #F6F2ED;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: calc(10px + 1vw);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons-section button:hover {
+    background-color: #033E3E;
+    color: #FED8B1;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: calc(14px + 1vw);
+    color: #033E3E;
+}
+
+/*Media Query for JavaScript Calculator*/
+
+@media screen and (max-width: 750px) {
+    .buttons-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .buttons-section button {
+        width: 80px;
+    }
+
+    .input-section input {
+        width: 100%;
+    }
+}
